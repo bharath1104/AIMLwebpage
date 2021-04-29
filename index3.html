@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, iitial-scale=1.0">
+	<title>RESPONSIVE</title>
+</head>
+<body>
+
+	<style>
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 1px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3ss;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+}
+
+@media screen and (max-height: 45px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 10px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+</body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="second.html">APPLICATIONS</a><br>
+    <a href="third.html">MACHINE LEARNING</a><br>
+    <a href="fourth.html">CONTACT US </a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+	<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  font-family: Aharoni;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#163d50;  color: white;padding:15px; ">
+  <h1>Artificial intelligence and machine learning</h1>
+  <h3 style="font-family: Bradley Hand ITC; font-size: 35px;">The Future is here</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a herf="second.html"> Projects </a></div>
+    <div class="menuitem">Machine</div>
+    <div class="menuitem">Code</div>
+    <div class="menuitem">UX/UI Design</div>
+    	
+  </div>
+<!--this is a main heading fo page-->
+  <div class="main">
+    <h2>Advancing AI for<br> everyone</br></h2>
+    <p> Machine Learning is a current application of AI based around the idea that </br> should really just be able to give machines access to data and let them learn for themselves.Dec 6,<br>2016Artificial Intelligence has been around for a long time – the Greek myths contain stories of mechanical men designed to mimic our </br> behavior. Very early European computers were conceived as “logical machines” and by reproducing capabilities such as basic arithmetic and memory, engineers saw their job, fundamentally, as attempting to create mechanical brains.</p> <img src="bharath.jpg" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>What  is AI?</h2>
+    <p>AI based around the idea that should really just be able to give machines access to data and let them learn for themselves.2016Artificial Intelligence</p>
+    <h2>What is ML?</h2>
+    <video width="230" height="240" controls>
+        	<source src="sandeep.mp4" type="video/mp4">
+        		<source src="sandeep.ogg" type="video/ogg">
+        </video>
+    <p>Learn from ML experts at Google
+Whether you’re just learning to code or you’re a seasoned machine learning practitioner, you’ll find information and exercises to help you develop yyour skills and advance your projects.</p>
+    <h2>AI ML?</h2>
+    <p>The future is here </p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
